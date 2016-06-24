@@ -1,0 +1,24 @@
+.footer {
+  background-color: $color-dark-gray;
+  background-image: url('/images/pixels.png');
+  background-repeat: repeat;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.4rem;
+  color: $color-text-white;
+  margin-top: 3rem;
+  padding: 2rem 0;
+
+  a {
+    color: $color-text-white;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-item {
+  margin: 0 1rem;
+}

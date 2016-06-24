@@ -1,0 +1,30 @@
+@import 'variables';
+
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  font-size: $font-size-normal;
+  font-family: "微软雅黑", "Microsoft YaHei", arial, sans-serif;
+  line-height: $line-height-normal;
+  color: $color-text-base;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media screen and (max-width: 1299px) {
+    width: 940px;
+  }
+}
+
+.no-style {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}

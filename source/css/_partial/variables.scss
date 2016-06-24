@@ -1,0 +1,15 @@
+$color-yellow: #f3df49;
+$color-dark-gray: #333;
+$color-white-gray: darken(white, 10%);
+$color-light-white-gray: darken(white, 5%);
+$color-dark-white-gray: darken(white, 15%);
+
+$color-text-white: $color-white-gray;
+$color-text-base: $color-dark-gray;
+$color-text-yellow: darken($color-yellow, 10%);
+
+$font-size-base: 10px;
+$font-size-normal: 1.6rem;
+$font-size-big: 2rem;
+
+$line-height-normal: 1.5;

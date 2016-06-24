@@ -1,0 +1,14 @@
+<section class="container">
+<%
+var lastAlphabet = '';
+items.forEach(item => {
+  if (typeof item.alphabet === 'undefined') item.alphabet = '_';
+  if (lastAlphabet !== item.alphabet) {
+    lastAlphabet = item.alphabet; %>
+    <h3 class="words-title"><%= lastAlphabet %></h3>
+  <% } %>
+  <a class="word" href="<%= url_for(item.path) %>">
+    <%= item.title %>
+  </a>
+<% }) %>
+</section>

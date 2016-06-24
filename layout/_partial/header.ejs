@@ -1,0 +1,48 @@
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <h1 class="header-logo">
+        <a class="no-style header-link" href="
+        <% if (is_home()) { %>
+          <%= url_for(config.root) %>
+        <% } else { %>
+          <%= url_for(page.lang) %>
+        <% } %>
+        ">JS Index</a>
+      </h1>
+      <a class="no-style header-link" href="<%= url_for(page.lang + '/archives') %>"><%= __('archives') %></a>
+      <a class="no-style header-link" href="<%= url_for(page.lang + '/explore') %>"><%= __('explore') %></a>
+      <a class="no-style header-link" target="_blank" href="<%= config.github %>"><%= __('github') %></a>
+      <form id="header-search-form" class="header-search-form">
+        <input id="header-search-input" class="header-search-input" type="text" placeholder="<%= __('search') %>"/>
+      </form>
+      <div class="header-lang-select-wrap header-link">
+        <label>
+        <% if (is_root()) { %>
+          Choose a language
+        <% } else { %>
+          <%= site.data.languages[page.lang] %>
+        <% } %>
+        </label>
+        <select id="header-lang-select" class="header-lang-select">
+        <% if (is_root()) { %>
+          <option disabled selected value class="hidden">Choose a language</option>
+          <% get_langs().forEach(lang => { %>
+            <option value="<%= lang %>" data-href="<%= switch_lang(lang) %>"><%= site.data.languages[lang] %></option>
+          <% }) %>
+        <% } else { %>
+          <% get_langs().forEach(lang => { %>
+            <option
+              value="<%= lang %>"
+              <%= lang === page.lang ? 'selected' : ''%>
+              data-href="<%= switch_lang(lang) %>"
+            >
+              <%= site.data.languages[lang] %>
+            </option>
+          <% }) %>
+        <% } %>
+        </select>
+      </div>
+    </div>
+  </div>
+</header>

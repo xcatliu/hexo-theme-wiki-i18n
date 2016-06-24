@@ -1,0 +1,28 @@
+<section class="container">
+  <h3 class="cards-title"><%= title %></h3>
+  <ul class="cards-content">
+  <% items.slice(0, 7).forEach(item => { %>
+    <li class="card-wrap">
+      <a class="card" href="<%= url_for(item.path) %>">
+        <h4 class="card-title"><%= item.title %></h4>
+        <% if (item.excerpt) { %>
+          <%= item.excerpt %>
+        <% } else { %>
+          <% var br = item.content.indexOf('\n') %>
+        	<% if(br === -1) { %>
+        	  <%- item.content %>
+        	<% } else { %>
+        	  <%- item.content.substring(0, br) %>
+          <% } %>
+        <% } %>
+      </a>
+    </li>
+  <% }) %>
+    <li class="card-wrap">
+      <a class="card" href="<%= url_for(page.lang + '/explore') %>">
+        <h4 class="card-title">&#8195;</h4>
+        <p class="card-read-more"><%= __('more') %></p>
+      </a>
+    </li>
+  </ul>
+</section>

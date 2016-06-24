@@ -1,0 +1,18 @@
+.words-title {
+  margin: 0;
+  padding: 2rem 0 1rem 0;
+}
+
+.word {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  margin: 0 0.5rem 0.8rem 0;
+  color: $color-text-base;
+  text-decoration: none;
+  background: $color-light-white-gray;
+
+  &:hover {
+    background: $color-white-gray;
+  }
+
+}

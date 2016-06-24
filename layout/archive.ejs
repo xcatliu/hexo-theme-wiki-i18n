@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<%- partial('_partial/head') %>
+  <body>
+  <%- partial('_partial/header') %>
+  <div class="container">
+    <h2 class="archive-title"><%= __('archives') %></h2>
+  </div>
+  <%- partial('_partial/words', {
+    items: page.posts,
+  }) %>
+  <%- partial('_partial/footer') %>
+  <%- partial('_partial/scripts') %>
+  </body>
+</html>

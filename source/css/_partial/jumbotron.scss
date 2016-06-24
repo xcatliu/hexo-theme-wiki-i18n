@@ -1,0 +1,46 @@
+@import 'variables';
+
+.jumbotron {
+  background-color: $color-dark-gray;
+  background-image: url('/images/pixels.png');
+  background-repeat: repeat;
+  overflow: hidden;
+  text-align: center;
+  color: $color-text-white;
+
+  a {
+    color: $color-text-white;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.jumbotron-title {
+  font-size: 4rem;
+  margin: 6rem 0 3rem 0;
+  color: $color-text-yellow;
+}
+
+.jumbotron-star {
+  vertical-align: middle;
+}
+
+.jumbotron-create-link {
+  vertical-align: middle;
+}
+
+.jumbotron-languages {
+  margin: 3rem 0;
+}
+
+.jumbotron-language-link {
+  margin: 0 0.5rem;
+}
+
+.jumbotron-language-strong {
+  margin: 0 0.5rem;
+  color: $color-text-yellow;
+}

@@ -1,0 +1,21 @@
+<section class="jumbotron">
+  <div class="container">
+    <h2 class="jumbotron-title"><%= __('jumbotron.title') %></h2>
+    <div>
+      <iframe class="jumbotron-star" src="https://ghbtns.com/github-btn.html?user=xcatliu&repo=js-index&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+      <a class="jumbotron-create-link" target="_blank" href="https://github.com/xcatliu/js-index/new/master/source/_posts/<%= page.lang %>"><%= __('jumbotron.create') %></a>
+    </div>
+    <div class="jumbotron-languages">
+      <% if (is_root()) { %>
+        <span class="jumbotron-language-strong">Choose a language:</span>
+      <% } %>
+      <% get_langs().forEach(lang => { %>
+        <% if (lang === page.lang && !is_root()) { %>
+          <span class="jumbotron-language-strong"><%= site.data.languages[lang] %></span>
+        <% } else { %>
+          <a class="jumbotron-language-link" href="<%= url_for(lang) %>"><%= site.data.languages[lang] %></a>
+        <% } %>
+      <% }); %>
+    </div>
+  </div>
+</section>

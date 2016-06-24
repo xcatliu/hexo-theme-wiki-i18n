@@ -1,0 +1,55 @@
+@import 'variables';
+
+.header {
+  background: $color-yellow;
+}
+
+.header-content {
+  margin: 0 -0.5rem;
+}
+
+.header-logo {
+  margin: 0;
+  font-size: $font-size-big;
+  display: inline-block;
+}
+
+.header-link {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.header-search-form {
+  display: inline-block;
+}
+
+.header-search-input {
+  padding: 0.4rem 0.5rem 0.1rem;
+  border: 0;
+  background: lighten($color-yellow, 25%);
+  width: 16rem;
+  &:hover {
+    background: lighten($color-yellow, 30%);
+  }
+  &:focus {
+    background: lighten($color-yellow, 40%);
+  }
+}
+
+.header-lang-select-wrap {
+  display: inline-block;
+  position: relative;
+  top: 0.5rem;
+  float: right;
+  text-align: center;
+}
+
+.header-lang-select {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
