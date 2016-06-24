@@ -3,6 +3,7 @@
 A hexo theme for i18n wiki site
 
 Live demo: http://js-index.com/
+The repo of the demo: https://github.com/xcatliu/js-index
 
 ## Preview
 
