@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/xcatliu/hexo-theme-wiki-i18n#readme",
   "devDependencies": {
-    "eslint": "^2.13.1",
-    "eslint-config-airbnb-base": "^3.0.1",
-    "eslint-plugin-import": "^1.8.1"
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
   }
 }
