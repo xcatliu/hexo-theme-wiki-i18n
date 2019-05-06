@@ -1,5 +1,8 @@
 # hexo-theme-wiki-i18n
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/xcatliu/hexo-theme-wiki-i18n.svg)](https://greenkeeper.io/)
+
+
 A hexo theme for i18n wiki site
 
 Live demo: http://js-index.com/
